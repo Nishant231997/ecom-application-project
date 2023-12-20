@@ -1,0 +1,51 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+      (click)="drawer.toggle()"
+    >
+      <mat-icon>menu</mat-icon> &nbsp;
+      <span class="panel-footer" style="font-family: 'Times New Roman', Times, serif">All</span>
+    </button>
+
+    <span class="example-spacer"></span>
+
+    <a>Grocery Store</a>
+    <a>Mini Tv</a>
+    <a>Customer Service</a>
+    <a> Electronics </a>
+    <a>Mobiles</a>
+    <a>Fashion</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer mode="side" opened="false">
+    <mat-nav-list>
+      <mat-list-item>
+        <mat-icon>business_center</mat-icon> &nbsp; &nbsp;
+        <button mat-icon-button matListItemMeta>Best Seller</button>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon>movie</mat-icon> &nbsp; &nbsp;
+        <button mat-icon-button matListItemMeta>New Releases</button>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon>library_books</mat-icon>&nbsp; &nbsp;
+        <button mat-icon-button matListItemMeta>New Books</button>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon> stay_current_portrait</mat-icon>&nbsp; &nbsp;
+
+        <button mat-icon-button matListItemMeta>Top Mobiles</button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content
+    ><div style="text-align: center; min-width: 600px">
+      <router-outlet></router-outlet></div
+  ></mat-drawer-content>
+</mat-drawer-container>
+
+

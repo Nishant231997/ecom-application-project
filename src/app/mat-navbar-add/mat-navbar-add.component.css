@@ -1,0 +1,23 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* mat-toolbar{
+    width:250px;
+  } */
+  a{
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .material-icons {
+   
+    font-size: 30px !important;
+  }
+  .panel-footer {
+    vertical-align: 8px;
+  }
+
+  .mat-toolbar.mat-primary {
+    margin-top: 5px;
+}
+ 
